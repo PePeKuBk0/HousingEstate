@@ -6,6 +6,10 @@ namespace HousingEstate
 {
     class Flat
     {
+        private List<Person> persones = new List<Person>();
+
+        public List<Person> Persones { get; set; }
+
         private int flatNumber;
         private int area;
         private int numberOfRooms;

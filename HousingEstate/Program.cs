@@ -11,6 +11,7 @@ namespace HousingEstate
             
             Flat B = new Flat(24,100,4);
             Console.WriteLine(B.ToString());
+            B.Persones.Add 
         }
     }
 }
