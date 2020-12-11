@@ -6,12 +6,16 @@ namespace HousingEstate
     {
         static void Main(string[] args)
         {
-            Person A = new Person("Jakub","Venetianer",16);
-            Console.WriteLine(A.ToString());
+            Person martin = new Person("Jakub","Venetianer",16);
+            Console.WriteLine(martin.ToString());
             
-            Flat B = new Flat(24,100,4);
-            Console.WriteLine(B.ToString());
-            B.Persones.Add 
+            Flat piestanska = new Flat(24,100,4);
+            Console.WriteLine(piestanska.ToString());
+
+            Person matej = new Person("pista","zavodsky",15);
+            piestanska.AddHabitant(matej);
+            piestanska.AddHabitant(martin);
+            
         }
     }
 }
