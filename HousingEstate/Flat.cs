@@ -28,9 +28,10 @@ namespace HousingEstate
         {
             return $"FlatNumber:{this.flatNumber} \narea:{this.area} \nnumberOfRooms:{this.numberOfRooms}";
         }
-        public void AddHabitant(Person habitant)
+        public void AddHabitant(string nameOfHabitant, string surNameOfHabitant, int ageOfHabitant)
         {
-            persones.Add(habitant);
+            Person habitant = new Person (nameOfHabitant, surNameOfHabitant, ageOfHabitant);
+
         }
     }
 }
